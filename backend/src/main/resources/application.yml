@@ -1,9 +1,11 @@
 spring:
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/influencer_marketplace}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:devpass}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
 supabase:
-  jwt:
-    issuer: ${SUPABASE_ISSUER:https://grcteqamjdtvgclhvxcm.supabase.co/auth/v1}
-    secret: ${SUPABASE_JWT_SECRET:2UWpGAoXJ538/VTrl0sSxz7ON9K45ZF2PeeUKkhUZN8gqEulak298Ok1dEmNT3uh9zFI+T8Hz6dEDng4Qmur9A==}
+  jwks:
+    url: https://grcteqamjdtvgclhvxcm.supabase.co/auth/v1/keys
+  api:
+    key: ${SUPABASE_ANON_KEY}   # replace with actual anon key from Supabase

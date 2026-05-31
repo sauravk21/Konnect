@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/influencer_konnect
+    username: postgres
+    password: postgres
+  # Remove the 'security.oauth2.resourceserver.jwt' block entirely
+
+supabase:
+  jwks:
+    url: https://grcteqamjdtvgclhvxcm.supabase.co/auth/v1/.well-known/jwks.json?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyY3RlcWFtamR0dmdjbGh2eGNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwMzQwMzUsImV4cCI6MjA5NDYxMDAzNX0.kFkcffthS3NkUoCJzMZPWSMZHI2Is1B-X3znslqUmpA
+  api:
+    key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdyY3RlcWFtamR0dmdjbGh2eGNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwMzQwMzUsImV4cCI6MjA5NDYxMDAzNX0.kFkcffthS3NkUoCJzMZPWSMZHI2Is1B-X3znslqUmpA   # replace with actual anon key from Supabase

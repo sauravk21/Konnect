@@ -1,4 +1,4 @@
-package com.example.backed_service;
+package com.example.backend_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
